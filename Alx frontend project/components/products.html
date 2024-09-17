@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Food Hub</title>
+    <style>
+        body.products-page {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header, footer {
+            background-color: #232b38;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .products {
+            padding: 20px;
+        }
+
+        .product-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-grid h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #232b38;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .product-card h2 {
+            font-size: 1.5em;
+            margin: 10px;
+            color: #232b38;
+        }
+
+        .product-card p {
+            margin: 0 10px 10px;
+            color: #666;
+        }
+
+        .product-card span {
+            display: block;
+            margin: 0 10px 10px;
+            font-size: 1.25em;
+            color: #e94e77;
+        }
+
+        .product-card button {
+            display: block;
+            width: calc(100% - 20px);
+            margin: 0 10px 10px;
+            padding: 10px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #e94e77;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product-card button:hover {
+            background-color: #d43f63;
+        }
+    </style>
+</head>
+<body class="products-page">
+    <header>
+        <h1>Food Hub</h1>
+    </header>
+    
+    <main>
+        <section class="products">
+            <div class="product-grid">
+                <h1>Our Products</h1>
+                <div class="product-list">
+                    <!-- Repeat this block for each product -->
+                    <div class="product-card">
+                        <img src="./images/plate-1.png" alt="Product Name">
+                        <h2>chef's special</h2>
+                        <p>Description of the product.</p>
+                        <span>$2.00</span>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="./images/plate-2.png" alt="Product Name">
+                        <h2>happy delight</h2>
+                        <p>Description of the product.</p>
+                        <span>$1.5</span>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="./images/plate-3.png" alt="Product Name">
+                        <h2></h2>
+                        <p>Description of the product.</p>
+                        <span>$2.00</span>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="./images/plate-1.png" alt="Product Name">
+                        <h2>chef's special</h2>
+                        <p>Description of the product.</p>
+                        <span>$2.00</span>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="./images/salad-table.jpg" alt="Product Name">
+                        <h2>chef's special</h2>
+                        <p>Simple green salad</p>
+                        <span>$2.00</span>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="./images/vegies.png" alt="Product Name">
+                        <h2>chef's special</h2>
+                        <p>Description of the product.</p>
+                        <span>$2.00</span>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="./images/plate-3.png" alt="Product Name">
+                        <h2>chef's special</h2>
+                        <p>Description of the product.</p>
+                        <span>$2.00</span>
+                        <button>Add to Cart</button>
+                    </div>
+                    <!-- More product cards... -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Food Hub</p>
+    </footer>
+</body>
+</html>
